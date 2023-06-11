@@ -64,51 +64,119 @@
   margin-left: -10px;
 }
 
-.footer .tit span {
-  color: #fff;
-}
-
 .footer {
-  border-top: 1px solid #ddd;
-  background: #f9f9f9;
-  padding: 30px 0 50px 0;
-  text-align: center;
-}
-
-.footer address {
-  margin: 0 0 10px 0;
-}
-
-.footer .footer_customer {
-  margin: 0 0 10px 0;
+  width: 100%;
+  padding-bottom: 95px;
+  background-color: #151414;
   font-size: 0;
+  line-height: 0;
+  text-align: left;
+  position: relative;
+  display: block;
+}
+
+.footer .link {
+
+  background-color: #151414;
+}
+
+.footer .link .inConts {
+  text-align: left;
+  border-bottom: 1px solid #939598;
+}
+
+.footer .link a.txt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 74px;
+  color: #939598;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+/* 거리주기 */
+.footer .link .txt {
+  padding: 0 11px 0 80px;
+}
+
+.footer .link .social {
+  position: absolute;
+  right: 18%;
+  top: 23px;
+  display: inline-block;
+}
+
+.footer .link .social>a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer .link .social>a {
+  margin-left: 10px;
+}
+
+.footer .slider img {
+
+  margin-top: 4%;
+}
+
+
+.pad {
+  padding: 20px 0;
+}
+
+.footer .text_banner {
+
+  font-weight: 300;
+  line-height: 1;
+  display: block;
+  padding: 50px 0;
 
 }
 
-.footer .footer_customer li {
-  display: inline-block;
+.footer p span {
+  font-size: 12px;
+  color: #939598;
+
+
+  margin-top: 12px;
+}
+
+.footer .banner>p strong {
+
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+
+}
+
+
+.footer .text>address,
+.footer .text>p>span {
+  font-style: normal;
+  font-weight: 500;
   font-size: 15px;
-}
-
-.footer .footer_customer li~li::before {
-  content: "";
+  line-height: 23px;
+  color: #939598;
   display: inline-block;
-  width: 1px;
-  height: 11px;
-  background: #cccaca;
-  margin: 0 10px;
+  vertical-align: top;
+  position: relative;
 }
 
-@media(max-width :1200px) {
-  .tel {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #ff6347;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 20px;
-  }
+.footer .text>p>span {}
+
+.footer .text>.inner_text>span {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1%;
+  color: #d1d3d4;
+}
+
+.footer .text>p.inner_text>span {}
+
+footer .text>p.inner_text>span>strong {
+  font-weight: 500;
+  color: #b69157;
 }
