@@ -1,0 +1,155 @@
+.slick-track,
+.slick-list {
+    transition-delay: 30ms;
+}
+
+.header {}
+
+.header.on {
+    background: #fff;
+}
+
+.header .inner {
+    transition: 0.5s;
+}
+
+.header.on .inner {
+    height: 100px;
+}
+
+
+.header .gnb>ul>li>a {
+    display: block;
+    line-height: 100px;
+
+}
+
+.header .gnb .style {}
+
+.header .gnb li a span {
+
+    width: 100%;
+    height: 100px;
+    padding: 0 37px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #111;
+    letter-spacing: -0.03em;
+    display: table;
+    box-sizing: border-box;
+}
+
+.header .gnb li a span {
+
+    padding: 5px 0;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+
+}
+
+.header .gnb li .sub {
+    font-weight: 500;
+    font-size: 18px;
+    color: red;
+}
+
+.header .menu_wrap .gnb>ul>li .sub {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 138px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #c49a6b;
+    text-align: center;
+    line-height: 40px;
+    z-index: 999;
+
+    visibility: hidden;
+    transition: 0.5s;
+
+}
+
+.header .gnb>ul>li:hover .sub {
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+
+
+.header .gnb>ul>li .sub::before {
+
+    content: "";
+    width: 14px;
+    height: 16px;
+    background: #fff;
+    border: 1px solid #c49a6b;
+    margin-left: -7px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    bottom: 170px;
+    border-radius: 99px;
+    visibility: hidden;
+
+
+
+}
+
+.header .gnb>ul>li:hover .sub::before {
+    bottom: 155px;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+
+
+
+.header .gnb>ul>li .sub li {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+
+    box-sizing: border-box;
+    z-index: 999;
+    border: #bc9468;
+}
+
+.header .gnb>ul>li .sub li a {
+    display: block;
+}
+
+
+
+.menu_wrap .sua ul {
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.header .sua a {
+    min-width: 76px;
+    padding: 0 12px;
+    background-color: #231f20;
+    border: 1px solid #bc955c;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: #fff;
+    letter-spacing: -0.03em;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-radius: 99px;
+}
