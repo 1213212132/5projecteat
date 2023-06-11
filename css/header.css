@@ -3,7 +3,9 @@
     transition-delay: 30ms;
 }
 
-.header {}
+.header {
+    word-break: keep-all;
+}
 
 .header.on {
     background: #fff;
@@ -50,14 +52,14 @@
 }
 
 .header .gnb li .sub {
-  width: 100%;
-  height: 41px;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #636363;
-  text-align: center;
-  display: table;
-  box-sizing: border-box;
+    width: 100%;
+    height: 41px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #636363;
+    text-align: center;
+    display: table;
+    box-sizing: border-box;
 }
 
 .header .menu_wrap .gnb>ul>li .sub {
@@ -71,13 +73,13 @@
     text-align: center;
     line-height: 40px;
     z-index: 999;
-   visibility: hidden; 
+    visibility: hidden;
     transition: 0.5s;
 
 }
 
 .header .gnb>ul>li:hover .sub {
-  top: 80px;
+    top: 80px;
     opacity: 1;
     visibility: visible;
 }
