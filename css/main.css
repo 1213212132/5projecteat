@@ -93,7 +93,7 @@ body {
 }
 
 .main_visual .slick-dots li button {
-    background: tomato;
+    background: #d1d1d1;
     color: #fff;
     border-radius: 50%;
     padding: 5px;
@@ -105,7 +105,49 @@ body {
 }
 
 .main_visual .slick-dots li.slick-active button {
-    background: #333;
+    background: #c49a6c;
+}
+
+
+
+.main_visual {
+    position: relative;
+}
+
+
+
+.main_visual .direction {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1340px;
+    width: 100%;
+}
+
+
+
+.main_visual .direction>a {}
+
+.main_visual .direction img {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+
+    padding: 10px;
+    color: #fff;
+
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.main_visual .direction .left {
+    left: 0;
+}
+
+.main_visual .direction .right {
+    right: 0;
+
 }
 
 
@@ -129,13 +171,13 @@ body {
     position: relative;
 }
 
-.mTitle>dt {
+.mTitle>h2 {
     font-weight: bold;
     font-size: 32px;
     color: #20221f;
 }
 
-.mTitle>dd {
+.mTitle>p {
     padding-top: 15px;
     font-size: 18px;
     color: #636363;
@@ -187,7 +229,7 @@ body {
 
 /* */
 .more {
-    padding: 0 350px 15px;
+    padding: 0 30px 15px;
     text-align: right;
 }
 
@@ -356,4 +398,91 @@ body {
 
 .mBtm_slider .slider img {
     display: inline-block;
+}
+
+
+.main_history .history {
+    display: flex;
+    gap: 30px;
+    min-height: 400px;
+
+}
+
+
+.main_history .title h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: #20221f;
+}
+
+
+.main_history .title p {
+    padding-top: 15px;
+
+    font-size: 18px;
+    color: #636363;
+}
+
+.main_history {}
+
+.main_history .history {
+    display: flex;
+    gap: 30px;
+    min-height: 400px;
+
+}
+
+.main_history .history>* {
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.main_history .history .history_menu li {
+    position: relative;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.main_history .history .history_menu li strong {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main_history .history .history_menu li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid tomato;
+    border-radius: 50%;
+}
+
+.main_history .history .history_menu li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 15px;
+    bottom: -25px;
+    width: 2px;
+    background: tomato;
+}
+
+.main_history .history .history_content li {
+    height: 0;
+    overflow: hidden;
+}
+
+.main_history .history .history_content li.on {
+    height: auto;
+}
+
+.main_history .history .history_content figure {
+    width: 120%;
+    background: white;
+    margin: 0 0 10px 0;
 }

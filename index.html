@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
 
 
+
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/layout03.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -61,12 +64,12 @@
                         </li>
                         <li>
                             <a href="#!"><span>매장찾기</span></a>
-                            <ul class="sub">
+                            <!-- <ul class="sub">
                                 <li><a href="">smenu01</a></li>
                                 <li><a href="">smenu02</a></li>
                                 <li><a href="">smenu03</a></li>
                                 <li><a href="">smenu04</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
 
                     </ul>
@@ -98,6 +101,11 @@
                     </div>
 
                 </div>
+
+                <div class="direction">
+                    <img src="./img/btn_bx_prev.png " class="left" alt="">
+                    <img src="./img/btn_bx_next.png" class="right" alt="">
+                </div>
             </section>
 
 
@@ -110,7 +118,7 @@
                 </div>
 
                 <div class="wrap_slider">
-                    <p class="more">
+                    <p class="more inner">
                         <a href=""><img src="./img/btn_more.png" alt=""></a>
                     </p>
                     <div class="slider_box inner">
@@ -155,8 +163,8 @@
             <section class="mconts mShop sec">
                 <div class="inner">
                     <dl class="mTitle">
-                        <dt>매장찾기</dt>
-                        <dd>전국 푸라닭치킨 매장을 빠르고 편하게 찾아보세요</dd>
+                        <h2>매장찾기</h2>
+                        <p>전국 푸라닭치킨 매장을 빠르고 편하게 찾아보세요</p>
                     </dl>
 
                     <form action="search" class="search">
@@ -189,9 +197,6 @@
 
                                         <select class="select area2" name="areadetailidx" id="areadetailidx" setval="">
                                             <option value="">구,군 선택</option>
-
-
-
                                         </select>
                                     </dd>
                                 </dl>
@@ -219,8 +224,11 @@
             </section>
 
 
+
+
+
             <section class="mbtm">
-                <div class="mConts mBtm">
+                <div class="mConts">
                     <div class="mBtm_slider">
                         <a class="slider"><img src="./img/last.jpg"></a>
 
@@ -279,7 +287,7 @@
                     <span>· 팩스 : 02-323-9003</span>
                     <span>· 이메일 : iduskorea@iduskorea.com</span>
                 </p>
-                <address class="COPYRIGHT">COPYRIGHT © 2019
+                <address class="COPYRIGHT">· COPYRIGHT © 2019
                     <span>IDUS KOREA</span>
                     . ALL RIGHTS RESERVED.
                 </address>
