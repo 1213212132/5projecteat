@@ -75,7 +75,7 @@ body {
     min-width: 1200px;
 }
 
-.mainvisua {
+.mainvisual {
     position: relative;
 }
 
@@ -401,12 +401,23 @@ body {
 }
 
 
-.main_history .history {
+.history_menu {
+
     display: flex;
-    gap: 30px;
-    min-height: 400px;
+    justify-content: center;
 
 }
+
+
+
+.history_menu ul {
+    margin: 0 auto;
+}
+
+.history_menu ul>li {
+    text-align: center;
+}
+
 
 
 .main_history .title h2 {
@@ -424,34 +435,42 @@ body {
     color: #636363;
 }
 
-.main_history {}
+
 
 .main_history .history {
-    display: flex;
+
+
     gap: 30px;
-    min-height: 400px;
+    min-height: 500px;
 
 }
 
 .main_history .history>* {
+
     flex: 1;
-    border-bottom: 1px solid #ddd;
+
 }
+
+.main_history .history .history_menu {}
 
 .main_history .history .history_menu li {
+
     position: relative;
+
+    font-size: 22px;
+    color: #333;
     margin: 0 0 30px 0;
-    padding: 0 0 0 30px;
+    padding: 0 50px 0 30px;
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 
-.main_history .history .history_menu li strong {
+/* .main_history .history .history_menu li strong {
     font-size: 18px;
     font-weight: 500;
-}
+} */
 
-.main_history .history .history_menu li::before {
+/* .main_history .history .history_menu li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -460,9 +479,9 @@ body {
     height: 10px;
     border: 2px solid tomato;
     border-radius: 50%;
-}
+} */
 
-.main_history .history .history_menu li:not(:last-child)::after {
+/* .main_history .history .history_menu li:not(:last-child)::after {
     content: "";
     position: absolute;
     left: 4px;
@@ -470,19 +489,23 @@ body {
     bottom: -25px;
     width: 2px;
     background: tomato;
-}
+} */
 
-.main_history .history .history_content li {
+.main_history .history_content li {
     height: 0;
     overflow: hidden;
 }
 
-.main_history .history .history_content li.on {
+.history_content li.on {
     height: auto;
 }
 
-.main_history .history .history_content figure {
-    width: 120%;
+
+
+
+.history_content figure {
+
+    width: 110%;
     background: white;
-    margin: 0 0 10px 0;
+
 }
