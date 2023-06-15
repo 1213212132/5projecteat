@@ -67,7 +67,17 @@ $(function () {
         e.preventDefault();
         let idx = $(this).index();
         $('.history_content li').eq(idx).addClass('on').siblings().removeClass('on');
+        $(this).addClass('on').siblings().removeClass('on');
+
+
     })
+
+
+    // $('.history_menu a').on('click', function (e) {
+    //     e.preventDefault();
+    //     let idx = $(this).index();
+    //     $(this).addClass('on').siblings().removeClass('on');
+    // })
 
 
     $(window).on('scroll', function () {

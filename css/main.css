@@ -67,6 +67,8 @@ body {
     background-image: url(../img/mainsldie3.jpg);
 }
 
+
+
 .main_visual .slide_wrap .main_slide {}
 
 .main_visual .slide_wrap h3 {}
@@ -133,9 +135,9 @@ body {
     cursor: pointer;
     position: absolute;
     top: 0;
-
+    width: 50px;
     padding: 10px;
-    color: #fff;
+
 
     border-radius: 50px;
     font-size: 20px;
@@ -282,7 +284,7 @@ body {
 
 
 .mShop {
-    padding: 160px 0 180px;
+
     background: #fff url('../img/bg_withme.png') no-repeat right 43px;
 }
 
@@ -346,6 +348,7 @@ body {
 }
 
 .mShop .shopSch input[type=submit] {
+
     width: 220px;
     height: 90px;
     padding: 0;
@@ -400,13 +403,11 @@ body {
     display: inline-block;
 }
 
-
-.history_menu {
-
-    display: flex;
-    justify-content: center;
-
+.main_history {
+    background: #f9f9f9;
 }
+
+
 
 
 
@@ -453,16 +454,35 @@ body {
 
 .main_history .history .history_menu {}
 
-.main_history .history .history_menu li {
-
-    position: relative;
-
-    font-size: 22px;
-    color: #333;
-    margin: 0 0 30px 0;
-    padding: 0 50px 0 30px;
+.history_menu {
+    margin-bottom: 3%;
     display: flex;
-    gap: 50px;
+    justify-content: center;
+    border: 1px solid #c1c1c1;
+    border-top: 3px solid #27272c;
+
+
+    background: #fff;
+    gap: 30px
+}
+
+.main_history .history .history_menu li {
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    background: #f9f9f9;
+    line-height: 25px;
+    align-items: center;
+    font-size: 22px;
+
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+    color: #333;
+
+    display: flex;
+
+    padding: 20px 30px 20px 30px;
 }
 
 /* .main_history .history .history_menu li strong {
@@ -505,7 +525,45 @@ body {
 
 .history_content figure {
 
-    width: 110%;
+    min-width: 100vh;
+    min-height: 80px;
     background: white;
 
+}
+
+
+
+.history_menu ul {}
+
+
+
+.history_menu li {}
+
+
+.history_menu li .right {}
+
+
+
+.main_history .history_menu>li.on {
+
+    background: #c49a6c;
+    color: white;
+}
+
+
+.main_history .history_menu>li:hover {
+    cursor: pointer;
+    background: #c49a6c;
+    color: white;
+}
+
+
+
+
+
+.under .history_content {
+
+    border: 1px solid #ddd;
+    background: #ffff;
+    padding: 30px 30px 30px 30px;
 }

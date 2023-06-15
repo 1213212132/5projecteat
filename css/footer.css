@@ -78,6 +78,7 @@
   text-align: left;
   position: relative;
   display: block;
+  white-space: nowrap;
 }
 
 .footer .link {
@@ -103,7 +104,7 @@
 
 /* 거리주기 */
 .footer .link .txt {
-  padding: 0 110px 0 5px;
+  padding: 0 115px 0 5px;
 
 }
 
@@ -111,12 +112,15 @@
   position: absolute;
   right: 20%;
   top: 23px;
+
   display: inline-block;
+
 }
 
 .footer .link .social>a {
   display: inline-block;
   vertical-align: top;
+  word-wrap: normal;
 }
 
 .footer .link .social>a {
