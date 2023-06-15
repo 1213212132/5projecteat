@@ -5,18 +5,28 @@
 
 .header {
     word-break: keep-all;
+
+
 }
 
 .header.on {
-    background: #fff;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+.header .menu_wrap {
+    align-items: center;
+    height: 120px;
+    transition: .5s;
+}
+
+.header.on .menu_wrap {
+    height: 80px;
+}
+
 
 .header .inner {
     transition: 0.5s;
-}
-
-.header.on .inner {
-    height: 100px;
 }
 
 
@@ -26,7 +36,6 @@
 
 }
 
-.header .gnb .style {}
 
 .header .gnb li a span {
 

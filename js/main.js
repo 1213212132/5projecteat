@@ -1,5 +1,11 @@
 $(function () {
 
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        sct > 0 ? $('.header').addClass('on') : $('.header').removeClass('on');
+    })
+
     $('.main_slide').slick({
         // vertical: true,
         autoplay: true,
