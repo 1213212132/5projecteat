@@ -11,11 +11,8 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/header.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
 
@@ -24,6 +21,7 @@
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
 </head>
 
@@ -128,16 +126,16 @@
                     </p>
                     <div class="slider_box inner">
                         <div class="m_slide">
-                            <div class="mslide1">
+                            <div class="mslide1" data-aos="flip-left">
                                 <img src="./img/mmenu1.jpg" alt="">
                             </div>
-                            <div class="mslide2">
+                            <div class="mslide2" data-aos="flip-left" data-aos-delay="300">
                                 <img src="./img/mmnew2.jpg" alt="">
                             </div>
-                            <div class="mslide3">
+                            <div class="mslide3" data-aos="flip-left" data-aos-delay="500">
                                 <img src="./img/mmenu03.jpg" alt="">
                             </div>
-                            <div class="mslide4">
+                            <div class="mslide4" data-aos="flip-left" data-aos-delay="800">
                                 <img src="./img/mmnew4.jpg" alt="">
                             </div>
                             <div class="mslide5">
@@ -234,7 +232,7 @@
                     <p>PURA(순수한) + DAK(닭) = PURADAK</p>
                 </dl>
                 <div class=" history ">
-                    <div class="left">
+                    <div class="left ">
                         <ul class="history_menu inner">
                             <li class="on">
                                 <a href="">왜 푸라닭인가</a>
@@ -259,7 +257,7 @@
                     </div>
                     <div class="under ">
                         <ul class="history_content inner sec">
-                            <li class="on">
+                            <li class="on ">
                                 <figure>
                                     <img src="./img/img_special01.jpg" alt="">
                                 </figure>
@@ -373,6 +371,10 @@
     </div>
 
     </div>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
